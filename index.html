@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Search Listing</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/fontawesome-all.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+</head>
+<body>
+	<div class="container mt-4">
+		<div class="card border-primary">
+			<div class="card-header">Search Listing</div>
+			<div class="card-body">
+				<div class="search_panel jsSearchPanel">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="form-group">
+								<label>First name</label>
+								<input type="text" name="first_name" class="form-control jsFirstname" />
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="form-group">
+								<label>Last name</label>
+								<input type="text" name="last_name" class="form-control jsLastname" />
+							</div>
+						</div>
+						<div class="col-sm-2">
+							<div class="form-group">
+								<label>&nbsp;</label><br />
+								<button class="btn btn-sm btn-primary jsSearchBtn"><i class="fa fa-search"></i>&nbsp;&nbsp;<span>Search</span></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="jsProgressBar progress-bar"><span class="jsProgress progress"></span></div>
+				<div class="table-responsive">
+					<table class="table jsSearchListingTbl table-bordered table-condensed">
+						<thead>
+							<tr>
+								<th>List no.</th>
+								<th width="100px">Exam no.</th>
+								<th>First name</th>
+								<th>Last name</th>
+								<th>Agency Description</th>
+								<th>Title Description</th>
+								<th width="140px">Publish Date</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td colspan="7" class="text-center">Loading...</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="jsLoading text-center">
+						<p></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade jsStudentModal" role="dialog">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Student details</h4>
+	      </div>
+	      <div class="modal-body">
+	        <table class="table table-bordered table-condensed">
+	        	<tr><td>First name</td><td><span class="jsFirstname"></span></td></tr>
+	        	<tr><td>Last name</td><td><span class="jsLastname"></span></td></tr>
+	        	<tr><td>Group no</td><td><span class="jsGroupNo"></span></td></tr>
+	        	<tr><td>List no</td><td><span class="jsListNo"></span></td></tr>
+	        	<tr><td>List title code</td><td><span class="jsTitleCode"></span></td></tr>
+	        	<tr><td>List agency code</td><td><span class="jsAgencCode"></span></td></tr>
+	        	<tr><td>List agency desc</td><td><span class="jsAgencDesc"></span></td></tr>
+	        	<tr><td>List title desc</td><td><span class="jsTitleDes"></span></td></tr>
+	        	<tr><td>Exam no</td><td><span class="jsExamNo"></span></td></tr>
+	        	<tr><td>Anniversary date</td><td><span class="jsAnniDate"></span></td></tr>
+	      	</table>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/search_listing.js"></script>
+
+</body>
+</html>
